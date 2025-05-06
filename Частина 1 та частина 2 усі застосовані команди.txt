@@ -1,0 +1,1332 @@
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ mkdir work
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ cd work
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work
+$ touch hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work
+$ touch hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work
+$ git init
+Initialized empty Git repository in F:/3 курс/repositories/work/.git/
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Initial Commit"
+[main (root-commit) 1490f97] Initial Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit
+[main ebf1826] Added h1 tag
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Added standart HTML page tags"
+[main dc301f3] Added standart HTML page tags
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add .
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Added HTML header"
+[main c320bce] Added HTML header
+ 1 file changed, 2 insertions(+)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log
+commit c320bced8cf2572cbfd6d4c99ac65a858842867d (HEAD -> main)
+Author: maxims <maxstorozhuk4@gmail.com>
+Date:   Mon Mar 10 16:25:23 2025 +0200
+
+    Added HTML header
+
+commit dc301f354c5960713052a3ea03061326cc607852
+Author: maxims <maxstorozhuk4@gmail.com>
+Date:   Mon Mar 10 16:23:58 2025 +0200
+
+    Added standart HTML page tags
+
+commit ebf182672ac2d56d98cf75763a22ac7a27506ed1
+Author: maxims <maxstorozhuk4@gmail.com>
+Date:   Mon Mar 10 16:20:26 2025 +0200
+
+    Added h1 tag
+
+commit 1490f974ba64c24be1f835c23ed751d9a06ef98b
+Author: maxims <maxstorozhuk4@gmail.com>
+Date:   Mon Mar 10 16:15:30 2025 +0200
+
+    Initial Commit
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --pretty=oneline
+c320bced8cf2572cbfd6d4c99ac65a858842867d (HEAD -> main) Added HTML header
+dc301f354c5960713052a3ea03061326cc607852 Added standart HTML page tags
+ebf182672ac2d56d98cf75763a22ac7a27506ed1 Added h1 tag
+1490f974ba64c24be1f835c23ed751d9a06ef98b Initial Commit
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --oneline --max-count=2
+c320bce (HEAD -> main) Added HTML header
+dc301f3 Added standart HTML page tags
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --oneline --since="5 minutes ago"
+c320bce (HEAD -> main) Added HTML header
+dc301f3 Added standart HTML page tags
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --oneline --until="5 minutes ago"
+ebf1826 Added h1 tag
+1490f97 Initial Commit
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --oneline --author="Your Name"
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --oneline --all
+c320bce (HEAD -> main) Added HTML header
+dc301f3 Added standart HTML page tags
+ebf1826 Added h1 tag
+1490f97 Initial Commit
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --all --pretty=format:"%h %cd %s (%an)" --since="7 days ago"
+c320bce Mon Mar 10 16:25:23 2025 +0200 Added HTML header (maxims)
+dc301f3 Mon Mar 10 16:23:58 2025 +0200 Added standart HTML page tags (maxims)
+ebf1826 Mon Mar 10 16:20:26 2025 +0200 Added h1 tag (maxims)
+1490f97 Mon Mar 10 16:15:30 2025 +0200 Initial Commit (maxims)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --pretty=format:"%h %ad | %s%d [%an]" --date=short
+c320bce 2025-03-10 | Added HTML header (HEAD -> main) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git config --global format.pretty '%h %ad | %s%d [%an]'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git config --global log.date short
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git config --global format.pretty '%h %ad | %s%d [%an]'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git config --global log.date short
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ gitk
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log
+c320bce 2025-03-10 | Added HTML header (HEAD -> main) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git checkout 1490f97
+Note: switching to '1490f97'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 1490f97 Initial Commit
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((1490f97...))
+$ cat hello.html
+Hello, World
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((1490f97...))
+$ git switch main
+Previous HEAD position was 1490f97 Initial Commit
+Switched to branch 'main'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git tag v1
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log
+c320bce 2025-03-10 | Added HTML header (HEAD -> main, tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git checkout v1~1
+Note: switching to 'v1~1'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at dc301f3 Added standart HTML page tags
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((dc301f3...))
+$ cat hello.html
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((dc301f3...))
+$ git diff
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((dc301f3...))
+$ cat hello.html
+<html>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((dc301f3...))
+$ git tag v1-beta
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1-beta))
+$ git log
+dc301f3 2025-03-10 | Added standart HTML page tags (HEAD, tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1-beta))
+$ git checkout v1
+Previous HEAD position was dc301f3 Added standart HTML page tags
+HEAD is now at c320bce Added HTML header
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1))
+$ git log
+c320bce 2025-03-10 | Added HTML header (HEAD, tag: v1, main) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1))
+$ git v1-beta
+git: 'v1-beta' is not a git command. See 'git --help'.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1))
+$ git checkout v1-beta
+Previous HEAD position was c320bce Added HTML header
+HEAD is now at dc301f3 Added standart HTML page tags
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1-beta))
+$ git diff  v1-beta
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1-beta))
+$ git diff v1-beta
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1-beta))
+$ git help
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone     Clone a repository into a new directory
+   init      Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add       Add file contents to the index
+   mv        Move or rename a file, a directory, or a symlink
+   restore   Restore working tree files
+   rm        Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect    Use binary search to find the commit that introduced a bug
+   diff      Show changes between commits, commit and working tree, etc
+   grep      Print lines matching a pattern
+   log       Show commit logs
+   show      Show various types of objects
+   status    Show the working tree status
+
+grow, mark and tweak your common history
+   branch    List, create, or delete branches
+   commit    Record changes to the repository
+   merge     Join two or more development histories together
+   rebase    Reapply commits on top of another base tip
+   reset     Reset current HEAD to the specified state
+   switch    Switch branches
+   tag       Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch     Download objects and refs from another repository
+   pull      Fetch from and integrate with another repository or a local branch
+   push      Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1-beta))
+$ git tagh
+git: 'tagh' is not a git command. See 'git --help'.
+
+The most similar commands are
+        stage
+        stash
+        tag
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1-beta))
+$ git tag
+v1
+v1-beta
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1-beta))
+$ git log main --all
+c320bce 2025-03-10 | Added HTML header (tag: v1, main) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (HEAD, tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work ((v1-beta))
+$ git switch main
+Previous HEAD position was dc301f3 Added standart HTML page tags
+Switched to branch 'main'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git restore hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ cat hello.html
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello.html
+
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git restore --staged hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git restore hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Oops, we didn't want this commit"
+[main f9dfe3b] Oops, we didn't want this commit
+ 1 file changed, 1 insertion(+)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git revert HEAD
+[main c36194b] Revert "Oops, we didn't want this commit"
+ 1 file changed, 1 deletion(-)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log
+c36194b 2025-03-10 | Revert "Oops, we didn't want this commit" (HEAD -> main) [maxims]
+f9dfe3b 2025-03-10 | Oops, we didn't want this commit [maxims]
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log
+c36194b 2025-03-10 | Revert "Oops, we didn't want this commit" (HEAD -> main) [maxims]
+f9dfe3b 2025-03-10 | Oops, we didn't want this commit [maxims]
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git tag oops
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git reset --hard v1
+HEAD is now at c320bce Added HTML header
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log
+c320bce 2025-03-10 | Added HTML header (HEAD -> main, tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --all
+c36194b 2025-03-10 | Revert "Oops, we didn't want this commit" (tag: oops) [maxims]
+f9dfe3b 2025-03-10 | Oops, we didn't want this commit [maxims]
+c320bce 2025-03-10 | Added HTML header (HEAD -> main, tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git tag -d oops
+Deleted tag 'oops' (was c36194b)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --al
+fatal: unrecognized argument: --al
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --all
+c320bce 2025-03-10 | Added HTML header (HEAD -> main, tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Added copyright statement"
+[main 80ea8cf] Added copyright statement
+ 1 file changed, 1 insertion(+)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log
+80ea8cf 2025-03-10 | Added copyright statement (HEAD -> main) [maxims]
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit --amend -m "Added copyright statement with email"
+[main f14e498] Added copyright statement with email
+ Date: Mon Mar 10 16:48:12 2025 +0200
+ 1 file changed, 1 insertion(+)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log
+f14e498 2025-03-10 | Added copyright statement with email (HEAD -> main) [maxims]
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git switch -c style
+Switched to a new branch 'style'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ touch style.css
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git add style.css
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git commit -m "Added css stylesheet"
+[style b4cab1d] Added css stylesheet
+ 1 file changed, 3 insertions(+)
+ create mode 100644 style.css
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git commit -m "Included stylesheet into hello.html"
+[style 272e4ed] Included stylesheet into hello.html
+ 1 file changed, 1 insertion(+)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log --all
+272e4ed 2025-03-10 | Included stylesheet into hello.html (HEAD -> style) [maxims]
+b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+f14e498 2025-03-10 | Added copyright statement with email (main) [maxims]
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log --all
+272e4ed 2025-03-10 | Included stylesheet into hello.html (HEAD -> style) [maxims]
+b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+f14e498 2025-03-10 | Added copyright statement with email (main) [maxims]
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git switch main
+Switched to branch 'main'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ cat hello.html
+<!-- Author: Maxim Storozhuk (maxstorozhuk4@gmail.com)-->
+<html>
+  <head>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git switch style
+Switched to branch 'style'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ cat hello.html
+<!-- Author: Maxim Storozhuk (maxstorozhuk4@gmail.com)-->
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+  </body>
+</html>
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log hello.html
+272e4ed 2025-03-10 | Included stylesheet into hello.html (HEAD -> style) [maxims]
+f14e498 2025-03-10 | Added copyright statement with email (main) [maxims]
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log style.css
+b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git show v1
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+
+diff --git a/hello.html b/hello.html
+index 103d1db..807ed91 100644
+--- a/hello.html
++++ b/hello.html
+@@ -1,4 +1,6 @@
+ <html>
++  <head>
++  </head>
+   <body>
+     <h1>Hello, World!</h1>
+   </body>
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ mv hello.html index.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git status
+On branch style
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    hello.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git add .
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git status
+On branch style
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    hello.html -> index.html
+
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ mkdir css
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git mv style.css css/style.css
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git status
+On branch style
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    style.css -> css/style.css
+        renamed:    hello.html -> index.html
+
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git commit -m "Renamed hello.html; moved style.css"
+[style 7320c29] Renamed hello.html; moved style.css
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename style.css => css/style.css (100%)
+ rename hello.html => index.html (100%)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log css/style.css
+7320c29 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> style) [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log --follow css/style.css
+7320c29 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> style) [maxims]
+b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git switch main
+Switched to branch 'main'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add README
+fatal: pathspec 'README' did not match any files
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add README.md
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Added README"
+[main dca52db] Added README
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Added README"
+On branch main
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git --log --all- --graph
+unknown option: --log
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           [--config-env=<name>=<envvar>] <command> [<args>]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --all- --graph
+fatal: unrecognized argument: --all-
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --all --graph
+* dca52db 2025-03-10 | Added README (HEAD -> main) [maxims]
+| * 7320c29 2025-03-10 | Renamed hello.html; moved style.css (style) [maxims]
+| * 272e4ed 2025-03-10 | Included stylesheet into hello.html [maxims]
+| * b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+|/
+* f14e498 2025-03-10 | Added copyright statement with email [maxims]
+* c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+* dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+* ebf1826 2025-03-10 | Added h1 tag [maxims]
+* 1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git switch style
+Switched to branch 'style'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git merge main
+Merge made by the 'ort' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log --all --graph
+*   2577580 2025-03-10 | Merge branch 'main' into style (HEAD -> style) [maxims]
+|\
+| * dca52db 2025-03-10 | Added README (main) [maxims]
+* | 7320c29 2025-03-10 | Renamed hello.html; moved style.css [maxims]
+* | 272e4ed 2025-03-10 | Included stylesheet into hello.html [maxims]
+* | b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+|/
+* f14e498 2025-03-10 | Added copyright statement with email [maxims]
+* c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+* dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+* ebf1826 2025-03-10 | Added h1 tag [maxims]
+* 1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git switch main
+Switched to branch 'main'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Added meta title"
+[main a7243de] Added meta title
+ 1 file changed, 2 insertions(+)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --all --graph
+* a7243de 2025-03-10 | Added meta title (HEAD -> main) [maxims]
+| *   2577580 2025-03-10 | Merge branch 'main' into style (style) [maxims]
+| |\
+| |/
+|/|
+* | dca52db 2025-03-10 | Added README [maxims]
+| * 7320c29 2025-03-10 | Renamed hello.html; moved style.css [maxims]
+| * 272e4ed 2025-03-10 | Included stylesheet into hello.html [maxims]
+| * b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+|/
+* f14e498 2025-03-10 | Added copyright statement with email [maxims]
+* c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+* dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+* ebf1826 2025-03-10 | Added h1 tag [maxims]
+* 1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git switch style
+Switched to branch 'style'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git merge main
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style|MERGING)
+$ git status
+On branch style
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style|MERGING)
+$ git merge --abort
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git merge main
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style|MERGING)
+$ git add index.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style|MERGING)
+$ git commit -m "Resolved merge conflict"
+[style 99df1c9] Resolved merge conflict
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log --all --graph
+*   99df1c9 2025-03-10 | Resolved merge conflict (HEAD -> style) [maxims]
+|\
+| * a7243de 2025-03-10 | Added meta title (main) [maxims]
+* | 2577580 2025-03-10 | Merge branch 'main' into style [maxims]
+|\|
+| * dca52db 2025-03-10 | Added README [maxims]
+* | 7320c29 2025-03-10 | Renamed hello.html; moved style.css [maxims]
+* | 272e4ed 2025-03-10 | Included stylesheet into hello.html [maxims]
+* | b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+|/
+* f14e498 2025-03-10 | Added copyright statement with email [maxims]
+* c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+* dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+* ebf1826 2025-03-10 | Added h1 tag [maxims]
+* 1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log --all --graph
+*   99df1c9 2025-03-10 | Resolved merge conflict (HEAD -> style) [maxims]
+|\
+| * a7243de 2025-03-10 | Added meta title (main) [maxims]
+* | 2577580 2025-03-10 | Merge branch 'main' into style [maxims]
+|\|
+| * dca52db 2025-03-10 | Added README [maxims]
+* | 7320c29 2025-03-10 | Renamed hello.html; moved style.css [maxims]
+* | 272e4ed 2025-03-10 | Included stylesheet into hello.html [maxims]
+* | b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+|/
+* f14e498 2025-03-10 | Added copyright statement with email [maxims]
+* c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+* dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+* ebf1826 2025-03-10 | Added h1 tag [maxims]
+* 1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git switch style
+Already on 'style'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log --graph
+*   99df1c9 2025-03-10 | Resolved merge conflict (HEAD -> style) [maxims]
+|\
+| * a7243de 2025-03-10 | Added meta title (main) [maxims]
+* | 2577580 2025-03-10 | Merge branch 'main' into style [maxims]
+|\|
+| * dca52db 2025-03-10 | Added README [maxims]
+* | 7320c29 2025-03-10 | Renamed hello.html; moved style.css [maxims]
+* | 272e4ed 2025-03-10 | Included stylesheet into hello.html [maxims]
+* | b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+|/
+* f14e498 2025-03-10 | Added copyright statement with email [maxims]
+* c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+* dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+* ebf1826 2025-03-10 | Added h1 tag [maxims]
+* 1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git reset --hard HEAD~2
+HEAD is now at 7320c29 Renamed hello.html; moved style.css
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log --graph
+* 7320c29 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> style) [maxims]
+* 272e4ed 2025-03-10 | Included stylesheet into hello.html [maxims]
+* b4cab1d 2025-03-10 | Added css stylesheet [maxims]
+* f14e498 2025-03-10 | Added copyright statement with email [maxims]
+* c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+* dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+* ebf1826 2025-03-10 | Added h1 tag [maxims]
+* 1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git switch style
+Already on 'style'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git rebase mai
+fatal: invalid upstream 'mai'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git rebase main
+Auto-merging hello.html
+CONFLICT (content): Merge conflict in hello.html
+error: could not apply 272e4ed... Included stylesheet into hello.html
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply 272e4ed... Included stylesheet into hello.html
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style|REBASE 2/3)
+$ git status
+interactive rebase in progress; onto a7243de
+Last commands done (2 commands done):
+   pick b4cab1d Added css stylesheet
+   pick 272e4ed Included stylesheet into hello.html
+Next command to do (1 remaining command):
+   pick 7320c29 Renamed hello.html; moved style.css
+  (use "git rebase --edit-todo" to view and edit)
+You are currently rebasing branch 'style' on 'a7243de'.
+  (fix conflicts and then run "git rebase --continue")
+  (use "git rebase --skip" to skip this patch)
+  (use "git rebase --abort" to check out the original branch)
+
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   hello.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style|REBASE 2/3)
+$ git add .
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style|REBASE 2/3)
+$ git rebase --continue
+[detached HEAD 01f75b3] Included stylesheet into hello.html
+ 1 file changed, 1 insertion(+)
+Successfully rebased and updated refs/heads/style.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git status
+On branch style
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git log --all --graph
+* 4c77c97 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> style) [maxims]
+* 01f75b3 2025-03-10 | Included stylesheet into hello.html [maxims]
+* 3cfc1c5 2025-03-10 | Added css stylesheet [maxims]
+* a7243de 2025-03-10 | Added meta title (main) [maxims]
+* dca52db 2025-03-10 | Added README [maxims]
+* f14e498 2025-03-10 | Added copyright statement with email [maxims]
+* c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+* dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+* ebf1826 2025-03-10 | Added h1 tag [maxims]
+* 1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (style)
+$ git switch main
+Switched to branch 'main'
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git merge style
+Updating a7243de..4c77c97
+Fast-forward
+ css/style.css            | 3 +++
+ hello.html => index.html | 1 +
+ 2 files changed, 4 insertions(+)
+ create mode 100644 css/style.css
+ rename hello.html => index.html (71%)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log -all --graph
+error: switch `l' expects a numerical value
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git log --all --graph
+* 4c77c97 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> main, style) [maxims]
+* 01f75b3 2025-03-10 | Included stylesheet into hello.html [maxims]
+* 3cfc1c5 2025-03-10 | Added css stylesheet [maxims]
+* a7243de 2025-03-10 | Added meta title [maxims]
+* dca52db 2025-03-10 | Added README [maxims]
+* f14e498 2025-03-10 | Added copyright statement with email [maxims]
+* c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+* dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+* ebf1826 2025-03-10 | Added h1 tag [maxims]
+* 1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ cd ..
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ pwd
+/f/3 курс/repositories
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ ls
+work/
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ git clone work home
+Cloning into 'home'...
+done.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ ls
+home/  work/
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ cd home
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ ls
+css/  index.html  README.md
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git log --all
+4c77c97 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> main, origin/style, origin/main, origin/HEAD) [maxims]
+01f75b3 2025-03-10 | Included stylesheet into hello.html [maxims]
+3cfc1c5 2025-03-10 | Added css stylesheet [maxims]
+a7243de 2025-03-10 | Added meta title [maxims]
+dca52db 2025-03-10 | Added README [maxims]
+f14e498 2025-03-10 | Added copyright statement with email [maxims]
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git remote show origin
+* remote origin
+  Fetch URL: F:/3 курс/repositories/work
+  Push  URL: F:/3 курс/repositories/work
+  HEAD branch: main
+  Remote branches:
+    main  tracked
+    style tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (up to date)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git branch
+* main
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/style
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ cd ../work
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add README
+fatal: pathspec 'README' did not match any files
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add README.md
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Changed README in original repo"
+[main 53c4515] Changed README in original repo
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ cd ../home
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 379 bytes | 6.00 KiB/s, done.
+From F:/3 курс/repositories/work
+   4c77c97..53c4515  main       -> origin/main
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git log --all
+53c4515 2025-03-10 | Changed README in original repo (origin/main, origin/HEAD) [maxims]
+4c77c97 2025-03-10 | Renamed hello.html; moved style.css (HEAD -> main, origin/style) [maxims]
+01f75b3 2025-03-10 | Included stylesheet into hello.html [maxims]
+3cfc1c5 2025-03-10 | Added css stylesheet [maxims]
+a7243de 2025-03-10 | Added meta title [maxims]
+dca52db 2025-03-10 | Added README [maxims]
+f14e498 2025-03-10 | Added copyright statement with email [maxims]
+c320bce 2025-03-10 | Added HTML header (tag: v1) [maxims]
+dc301f3 2025-03-10 | Added standart HTML page tags (tag: v1-beta) [maxims]
+ebf1826 2025-03-10 | Added h1 tag [maxims]
+1490f97 2025-03-10 | Initial Commit [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ cat README
+cat: README: No such file or directory
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ cat README.md
+This is the Hello World example from the GitHowTo tutorial.
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git merge origin/main
+Updating 4c77c97..53c4515
+Fast-forward
+ README.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ cat README
+cat: README: No such file or directory
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ cat README.md
+This is the Hello World example from the Git tutorial.
+(changed in origin)
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git branch --track style origin/style
+branch 'style' set up to track 'origin/style'.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git branch -a
+* main
+  style
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+  remotes/origin/style
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git log --max-count=2
+53c4515 2025-03-10 | Changed README in original repo (HEAD -> main, origin/main, origin/HEAD) [maxims]
+4c77c97 2025-03-10 | Renamed hello.html; moved style.css (origin/style, style) [maxims]
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ cd ..
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ git clone --bare work work.git
+Cloning into bare repository 'work.git'...
+done.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ ls work.git
+config  description  HEAD  hooks/  info/  objects/  packed-refs  refs/
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ cd work
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git remote add shared ../work.git
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git push shared main
+Everything up-to-date
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git switch main
+Already on 'main'
+M       README.md
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add README
+fatal: pathspec 'README' did not match any files
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git add README.md
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git commit -m "Added shared comment to readme"
+[main d2751b8] Added shared comment to readme
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ git push shared main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 405 bytes | 405.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To ../work.git
+   53c4515..d2751b8  main -> main
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ cd ../home
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git remote add shared ../work.git
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git branch --track shared main
+branch 'shared' set up to track 'main'.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ git pull shared main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 385 bytes | 5.00 KiB/s, done.
+From ../work
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> shared/main
+Updating 53c4515..d2751b8
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ cat README.md
+This is the Hello World example from the Git tutorial.
+(changed in the origin and pushed to shared)
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/home (main)
+$ cd ..
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ # (From the "repositories" directory)
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ git daemon --verbose --export-all --base-path=.
+[18572] Ready to rumble
+
+
+
+
+
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/work (main)
+$ cd ..
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ git clone git://localhost/work.git network_work
+Cloning into 'network_work'...
+remote: Enumerating objects: 36, done.
+remote: Counting objects: 100% (36/36), done.
+remote: Compressing objects: 100% (27/27), done.
+remote: Total 36 (delta 4), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (36/36), done.
+Resolving deltas: 100% (4/4), done.
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories
+$ cd network_work
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/network_work (main)
+$ ls
+css/  index.html  README.md
+
+maksi@DESKTOP-44RALMV MINGW64 /f/3 курс/repositories/network_work (main)
+$
+
